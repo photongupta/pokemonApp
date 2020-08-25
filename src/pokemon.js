@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 const getPokeDetails = function (id) {
   const url = `http://pokeapi.co/api/v2/pokemon/${id}`;

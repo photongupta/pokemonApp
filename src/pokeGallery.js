@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Pokemon from './pokemon.js';
 
 const PokeGallery = function (props) {

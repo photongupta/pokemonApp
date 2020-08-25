@@ -20,7 +20,11 @@ class App extends React.Component {
 
   render() {
     const count = (
-      <input placeholder="Enter Count" onKeyUp={this.updateCount} />
+      <input
+        placeholder="Enter Count"
+        value={this.state.count}
+        onChange={this.updateCount}
+      />
     );
     const gallery = <PokeGallery count={+this.state.count} />;
     const buttonText = this.state.isSubmit ? 'Change count' : 'Show pokemons';
