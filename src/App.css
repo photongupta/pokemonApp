@@ -2,3 +2,23 @@
   text-align: center;
 }
 
+.PokeGallery {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.Card{
+    width: 150px;
+    box-shadow: 0 0 4px 4px rgb(220,220,220);
+    border-radius: 4px;
+    margin: 15px;
+}
+
+.Name{
+  font-family:'sans sarif';
+}
+
+.PokeImg{
+  cursor: pointer;
+}

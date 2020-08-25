@@ -20,7 +20,7 @@ class App extends React.Component {
 
   render() {
     let countBox = (
-      <input placeholder="Name" onKeyUp={this.updateCount}></input>
+      <input placeholder="Enter count" onKeyUp={this.updateCount}></input>
     );
     let buttonText = 'Show pokemons';
 
@@ -32,7 +32,7 @@ class App extends React.Component {
     }
 
     return (
-      <div class="App">
+      <div className="App">
         {countBox}
         <button onClick={this.toggleSubmit}>{buttonText}</button>
       </div>
