@@ -19,21 +19,15 @@ class App extends React.Component {
   }
 
   render() {
-    let countBox = (
-      <input placeholder="Enter count" onKeyUp={this.updateCount}></input>
+    const count = (
+      <input placeholder="Enter Count" onKeyUp={this.updateCount} />
     );
-    let buttonText = 'Show pokemons';
-
-    if (this.state.isSubmit) {
-      buttonText = 'Change count';
-      countBox = (
-        <PokeGallery count={+this.state.count}>Pokemon Gallery</PokeGallery>
-      );
-    }
+    const gallery = <PokeGallery count={+this.state.count} />;
+    const buttonText = this.state.isSubmit ? 'Change count' : 'Show pokemons';
 
     return (
       <div className="App">
-        {countBox}
+        {this.state.isSubmit ? gallery : count}
         <button onClick={this.toggleSubmit}>{buttonText}</button>
       </div>
     );
